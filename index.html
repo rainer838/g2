@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SCI T4 NetLogo Simulation</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0f172a;
+      color:white;
+      min-height:100vh;
+    }
+
+    header{
+      padding:30px;
+      text-align:center;
+      background:#111827;
+      border-bottom:2px solid #334155;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .container{
+      width:95%;
+      max-width:1400px;
+      margin:auto;
+      padding:30px 0;
+    }
+
+    .simulation-box{
+      background:#1e293b;
+      border-radius:20px;
+      padding:20px;
+      box-shadow:0 0 20px rgba(0,0,0,0.4);
+    }
+
+    iframe{
+      width:100%;
+      height:850px;
+      border:none;
+      border-radius:15px;
+      background:white;
+    }
+
+    .info{
+      margin-top:25px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#111827;
+      padding:20px;
+      border-radius:15px;
+      border:1px solid #334155;
+    }
+
+    .card h2{
+      margin-bottom:10px;
+      color:#38bdf8;
+    }
+
+    .card p{
+      color:#d1d5db;
+      line-height:1.6;
+    }
+
+    footer{
+      margin-top:40px;
+      text-align:center;
+      padding:20px;
+      color:#94a3b8;
+      border-top:1px solid #334155;
+    }
+
+    .button{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 20px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .button:hover{
+      background:#0ea5e9;
+      transform:scale(1.05);
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:28px;
+      }
+
+      iframe{
+        height:600px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>SCI T4 Simulation</h1>
+    <p>Interactive NetLogo Simulation Website</p>
+  </header>
+
+  <div class="container">
+
+    <div class="simulation-box">
+
+      <!-- CHANGE simulation.html TO YOUR ACTUAL FILE -->
+      <iframe src="simulation.html"></iframe>
+
+    </div>
+
+    <div class="info">
+
+      <div class="card">
+        <h2>About The Simulation</h2>
+        <p>
+          This project was created using NetLogo 6.4 and published online
+          using GitHub Pages so everyone can interact with the simulation
+          directly from their browser.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>How To Use</h2>
+        <p>
+          Press setup, adjust the sliders, then run the model to observe
+          how the system behaves under different conditions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Project Files</h2>
+        <p>
+          Upload this file as <b>index.html</b> into your GitHub repository.
+        </p>
+
+        <a class="button" href="#">
+          View Source
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    SCI T4 NetLogo Simulation © 2026
+  </footer>
+
+</body>
+</html>
